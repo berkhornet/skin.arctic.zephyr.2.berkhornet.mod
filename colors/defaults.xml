@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    <!-- Main -->
+    <color name="main_fg_100">ffffffff</color>
+    <color name="main_fg_90">e7ffffff</color>
+    <color name="main_fg_70">b3ffffff</color>
+    <color name="main_fg_30">4dffffff</color>
+    <color name="main_fg_12">1fffffff</color>
+
+    <color name="main_bg_100">ff28a895</color>
+    <color name="main_bg_90">e728a895</color>
+    <color name="main_bg_70">b328a895</color>
+    <color name="main_bg_30">4d28a895</color>
+    <color name="main_bg_12">1f28a895</color>
+
+    <color name="main_half">4d9f9f9f</color>
+
+    <!-- Dialogs -->
+	<!-- Background (panel) changed to 28a895 -->
+    <color name="dialog_bg_100">FF1d4b44</color>
+    <color name="dialog_bg_70">B31d4b44</color>
+    <color name="dialog_bg_30">4D1d4b44</color>
+    <color name="dialog_bg_12">1F1d4b44</color>
+	<!-- Foreground (text) changed to ffffff -->
+    <color name="dialog_fg_100">FFffffff</color>
+    <color name="dialog_fg_70">B3ffffff</color>
+    <color name="dialog_fg_30">4Dffffff</color>
+    <color name="dialog_fg_12">1Fffffff</color>
+
+    <!-- Panels -->
+	<!-- Background changed from c5000000 -->
+    <color name="panel_bg">ff1d4b44</color>
+    <color name="panel_fg_100">FFededed</color>
+    <color name="panel_fg_70">B3ededed</color>
+    <color name="panel_fg_30">4Dededed</color>
+    <color name="panel_fg_12">1Fededed</color>
+    
+    <!-- Background -->
+	<!-- Main Background changed -->
+    <color name="Background">ff1d4b44</color>
+    <color name="HomePanel">e71d4b44</color>
+
+    <!-- Backing Panels and Furniture -->
+    <color name="PosterBack">ff333333</color>
+    <color name="AltPosterBack">ff333333</color>
+
+    <!-- Highlight -->
+    <color name="Highlight">ff0385b5</color>
+    <color name="Selected">ffffffff</color>
+
+    <!-- Shadows -->
+    <color name="Shadow">55ffffff</color>
+</colors>
