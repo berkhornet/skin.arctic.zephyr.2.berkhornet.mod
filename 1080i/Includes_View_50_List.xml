@@ -878,7 +878,7 @@
                 <top>5</top>
                 <width>517</width>
                 <height>24</height>
-                <texture colordiffuse="$PARAM[fgcolor]">indicator/library.png</texture>
+                <texture colordiffuse="$PARAM[fgcolor]">indicator/pvr-hasarchive.png</texture>
                 <visible>ListItem.IsPlayable + !ListItem.IsRecording + !ListItem.HasTimer</visible>
                 <visible>$PARAM[visible]</visible>
             </control>
