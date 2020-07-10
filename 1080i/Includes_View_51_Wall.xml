@@ -446,7 +446,8 @@
                 <param name="viewtype" value="$LOCALIZE[31358]" />
                 <param name="viewtypename" value="icon" />
                 <param name="forced" value="true" />
-                <param name="visible" value="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors) | $EXP[Exp_IsPluginAdvancedLauncher]" />
+                <!-- Container.Content (episodes) added -->
+                <param name="visible" value="Container.Content(episodes) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(actors) | $EXP[Exp_IsPluginAdvancedLauncher]" />
                 <include>View_Vertical_Movement</include>
             </include>
         </control>
