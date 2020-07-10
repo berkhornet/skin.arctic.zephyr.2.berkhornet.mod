@@ -115,7 +115,8 @@
             <width>auto</width>
             <align>left</align>
             <height>70</height>
-            <font>$PARAM[font]_small</font>
+            <!-- font changed from $PARAM[font]_small -->
+            <font>font_notification</font>
             <focusedcolor>main_fg_30</focusedcolor>
             <selectedcolor>main_fg_30</selectedcolor>
             <textcolor>main_fg_30</textcolor>
