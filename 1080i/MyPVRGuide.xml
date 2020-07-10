@@ -15,29 +15,114 @@
                 <visible>Control.IsVisible(10)</visible>
                 <include>View_Group</include>
                 <control type="group">
+                    <!-- added posy -->
+		            <posy>150</posy>
                     <include condition="Skin.HasSetting(PVRGuide.Info)">View_PVR_Guide_Top</include>
-                    <control type="panel" id="11">
-                        <height>item_list_height</height>
+                    <!-- START: Images added to display left/right arrows when Categories/Groups in focus -->
+		            <control type="image">
+		    	        <posx>-50</posx>						
+ 		            	<width>40</width>
+ 		    	        <height>60</height>						
+ 		    	        <texture colordiffuse="main_fg_12" border="10">diffuse/box.png</texture>
+ 			        <visible>!Skin.HasSetting(ShowPVRGroups) + Control.HasFocus(11)</visible>						
+ 		            </control>
+		            <control type="image">
+			            <posx>-50</posx>						
+ 			            <width>40</width>
+ 			            <height>60</height>						
+ 			            <texture>buttons/spin-left.png</texture>
+ 			            <visible>!Skin.HasSetting(ShowPVRGroups) + Control.HasFocus(11)</visible>						
+ 		            </control>				
+		            <control type="image">
+			            <posx>1770</posx>						
+ 			            <width>40</width>
+ 		            	<height>60</height>						
+ 			            <texture colordiffuse="main_fg_12" border="10">diffuse/box.png</texture>
+ 			            <visible>!Skin.HasSetting(ShowPVRGroups) + Control.HasFocus(11)</visible>						
+ 		            </control>									
+ 		            <control type="image">
+ 			            <posx>1770</posx>						
+ 			            <width>40</width>
+ 			            <height>60</height>
+ 			            <texture>buttons/spin-right.png</texture>
+ 			            <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+ 			            <visible>!Skin.HasSetting(ShowPVRGroups) + Control.HasFocus(11)</visible>
+ 		            </control>
+		            <!-- END: Images added to display left/right arrows when Categories/Groups in focus -->
+                    <!-- control type changed from Panel (to allow persistent highlighting in group list) -->
+                    <control type="list" id="11">
+                        <!-- posx added -->
+			            <posx>3</posx>
+                        <!-- height changed from item_list_height -->
+                        <height>60</height>
+                        <!-- width added -->
+                        <width>1760</width>
                         <orientation>horizontal</orientation>
                         <ondown>10</ondown>
                         <onup>10</onup>
-                        <itemlayout width="210" height="item_list_height">
-                            <control type="label">
-                                <align>left</align>
-                                <aligny>top</aligny>
-                                <textcolor>main_fg_30</textcolor>
-                                <font>font_tiny_bold</font>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
+                        <!-- height changed from item_list_height and width changed from 210 -->
+                        <itemlayout width="176" height="60">
+                            <!-- Original Label Removed -->
+                        	<!-- control type="label">
+                            		<align>left</align>
+                            		<aligny>top</aligny>
+                            		<textcolor>main_fg_30</textcolor>
+                            		<font>font_tiny_bold</font>
+                            		<label>$INFO[ListItem.Label]</label>
+                        	</control -->
+                            <!-- Texture and Textbox Added -->
+				            <control type="image">
+				            	<width>170</width>
+				            	<texture colordiffuse="main_bg_30" border="10">diffuse/box.png</texture>
+			            	</control>							
+				            <control type="textbox">
+					            <width>165</width>
+					            <label>$INFO[ListItem.Label]</label>
+					            <aligny>center</aligny>
+					            <align>center</align>
+					            <textcolor>main_fg_30</textcolor>
+					            <font>font_info_buttons</font>
+					            <wrapmultiline>true</wrapmultiline>
+					            <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+				            </control>
                         </itemlayout>
-                        <focusedlayout width="210" height="item_list_height">
-                            <control type="label">
-                                <align>left</align>
-                                <aligny>top</aligny>
-                                <textcolor>main_fg_100</textcolor>
-                                <font>font_tiny_bold</font>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
+                        <!-- height changed from item_list_height and width changed from 210 -->
+                        <focusedlayout width="176" height="60">
+                            <!-- Original Label Removed -->
+                            <!-- control type="label">
+                               	<align>left</align>
+                               	<aligny>top</aligny>
+                               	<textcolor>main_fg_100</textcolor>
+                               	<font>font_tiny_bold</font>
+                               	<label>$INFO[ListItem.Label]</label>
+                            </control -->
+                            <!-- Texture and Textbox Added -->
+				            <control type="image">
+					            <texture colordiffuse="main_bg_30" border="10">diffuse/box.png</texture>
+					            <width>170</width>
+				            </control>							
+				            <control type="textbox">
+					            <width>165</width>							
+					            <label>$INFO[ListItem.Label]</label>
+					            <aligny>center</aligny>
+					            <align>center</align>
+					            <textcolor>main_fg_100</textcolor>
+					            <font>font_info_buttons</font>
+					            <wrapmultiline>true</wrapmultiline>
+					            <visible>!Control.HasFocus(11)</visible>
+					            <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+				            </control>							
+				            <control type="textbox">
+					            <width>165</width>							
+					            <label>$INFO[ListItem.Label]</label>
+					            <aligny>center</aligny>
+					            <align>center</align>
+					            <textcolor>main_fg_100</textcolor>
+					            <font>font_info_buttons</font>
+					            <wrapmultiline>true</wrapmultiline>
+					            <visible>Control.HasFocus(11)</visible>
+					            <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
+				            </control>                            
                         </focusedlayout>
                     </control>
                     <include condition="!Skin.HasSetting(PVRGuide.DisableSlimMode)">View_PVR_Guide_List</include>
