@@ -98,7 +98,7 @@
                             </control -->
                             <!-- Texture and Textbox Added -->
 				            <control type="image">
-					            <texture colordiffuse="main_bg_30" border="10">diffuse/box.png</texture>
+					            <texture colordiffuse="main_fg_70" border="10">diffuse/box.png</texture>
 					            <width>170</width>
 				            </control>							
 				            <control type="textbox">
@@ -106,7 +106,7 @@
 					            <label>$INFO[ListItem.Label]</label>
 					            <aligny>center</aligny>
 					            <align>center</align>
-					            <textcolor>main_fg_100</textcolor>
+					            <textcolor>main_bg_100</textcolor>
 					            <font>font_info_buttons</font>
 					            <wrapmultiline>true</wrapmultiline>
 					            <visible>!Control.HasFocus(11)</visible>
@@ -117,7 +117,7 @@
 					            <label>$INFO[ListItem.Label]</label>
 					            <aligny>center</aligny>
 					            <align>center</align>
-					            <textcolor>main_fg_100</textcolor>
+					            <textcolor>main_bg_100</textcolor>
 					            <font>font_info_buttons</font>
 					            <wrapmultiline>true</wrapmultiline>
 					            <visible>Control.HasFocus(11)</visible>
