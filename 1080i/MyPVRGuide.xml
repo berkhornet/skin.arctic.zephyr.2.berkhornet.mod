@@ -80,7 +80,7 @@
 					            <label>$INFO[ListItem.Label]</label>
 					            <aligny>center</aligny>
 					            <align>center</align>
-					            <textcolor>main_fg_30</textcolor>
+					            <textcolor>main_fg_70</textcolor>
 					            <font>font_info_buttons</font>
 					            <wrapmultiline>true</wrapmultiline>
 					            <autoscroll time="3600" delay="6000" repeat="6000">true</autoscroll>
