@@ -353,9 +353,9 @@
 			        <aspectratio aligny="center" align="right">keep</aspectratio>
 			        <visible>!Skin.HasSetting(PVRGuide.ColorDiffuse)</visible>
 		        </control>
-                <!-- Channel Resolution icons added -->
+                		<!-- Channel Resolution icons added -->
 				<control type="image">
-					<left>268</left>
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -366,7 +366,7 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
-					<left>268</left>
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -376,8 +376,8 @@
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
 				</control>
-                <control type="image">
-					<left>268</left>
+                		<control type="image">
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -388,6 +388,16 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<!-- End of Cannel Resolution icons -->
+		<!-- "Has Archive" icon added -->
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>5</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/hasarchive.png</texture>
+		    	<visible>ListItem.HasArchive</visible>
+                </control>
             </channellayout>
             <focusedchannellayout height="item_list_height" width="340">
                 <control type="group">
@@ -484,7 +494,7 @@
                 </control>
                 <!-- Channel Resolution icons added -->
 				<control type="image">
-					<left>268</left>
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -495,7 +505,7 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="image">
-					<left>268</left>
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -505,8 +515,8 @@
 					<aligny>center</aligny>
 					<aspectratio>keep</aspectratio>
 				</control>
-                <control type="image">
-					<left>268</left>
+                		<control type="image">
+					<left>255</left>
 					<top>13</top>
 					<width>60</width>
 					<height>60</height>								
@@ -517,6 +527,16 @@
 					<aspectratio>keep</aspectratio>
 				</control>
 				<!-- End of Cannel Resolution icons -->
+		<!-- "Has Archive" icon added -->
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>5</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/hasarchive.png</texture>
+		    	<visible>ListItem.HasArchive</visible>
+                </control>
             </focusedchannellayout>
             <itemlayout height="item_list_height" width="521">
                 <include content="View_50_EPG_Itemlayout">
