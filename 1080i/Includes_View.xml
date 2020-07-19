@@ -356,9 +356,9 @@
                 		<!-- Channel Resolution icons added -->
 				<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>58.5</width>
+					<height>38</height>									
 					<texture>pvr/fhd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," FHD")</visible>
 					<align>center</align>
@@ -367,9 +367,9 @@
 				</control>
 				<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>47</width>
+					<height>38</height>									
 					<texture>pvr/hd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," HD")</visible>
 					<align>center</align>
@@ -378,9 +378,9 @@
 				</control>
                 		<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>43</width>
+					<height>38</height>								
 					<texture>pvr/sd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," SD")</visible>
 					<align>center</align>
@@ -495,9 +495,9 @@
                 <!-- Channel Resolution icons added -->
 				<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>58.5</width>
+					<height>38</height>									
 					<texture>pvr/fhd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," FHD")</visible>
 					<align>center</align>
@@ -506,9 +506,9 @@
 				</control>
 				<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>47</width>
+					<height>38</height>									
 					<texture>pvr/hd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," HD")</visible>
 					<align>center</align>
@@ -517,9 +517,9 @@
 				</control>
                 		<control type="image">
 					<left>255</left>
-					<top>13</top>
-					<width>60</width>
-					<height>60</height>								
+					<top>23</top>
+					<width>43</width>
+					<height>38</height>								
 					<texture>pvr/sd.png</texture>
 					<visible>String.Contains(ListItem.ChannelName," SD")</visible>
 					<align>center</align>
