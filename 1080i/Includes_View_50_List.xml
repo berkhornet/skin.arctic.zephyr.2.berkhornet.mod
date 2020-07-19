@@ -878,7 +878,7 @@
                 <top>5</top>
                 <width>517</width>
                 <height>24</height>
-                <texture colordiffuse="$PARAM[fgcolor]">indicator/pvr-hasarchive.png</texture>
+                <texture>indicator/isplayable.png</texture>
                 <visible>ListItem.IsPlayable + !ListItem.IsRecording + !ListItem.HasTimer</visible>
                 <visible>$PARAM[visible]</visible>
             </control>
@@ -887,7 +887,7 @@
                 <top>5</top>
                 <width>517</width>
                 <height>24</height>
-                <texture colordiffuse="$PARAM[fgcolor]">indicator/timer.png</texture>
+                <texture>indicator/record.png</texture>
                 <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                 <visible>$PARAM[visible]</visible>
             </control>
@@ -896,7 +896,7 @@
                 <top>5</top>
                 <width>517</width>
                 <height>24</height>
-                <texture>indicator/record.png</texture>
+                <texture>indicator/isrecording.png</texture>
                 <visible>ListItem.IsRecording</visible>
                 <visible>$PARAM[visible]</visible>
             </control>
@@ -906,7 +906,7 @@
                 <top>5</top>
                 <width>517</width>
                 <height>24</height>
-                <texture colordiffuse="$PARAM[fgcolor]">indicator/reminder.png</texture>
+                <texture>indicator/reminder.png</texture>
                 <visible>ListItem.HasReminder</visible>
                 <visible>$PARAM[visible]</visible>
             </control>
