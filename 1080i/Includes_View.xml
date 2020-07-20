@@ -398,6 +398,25 @@
 			<texture>indicator/hasarchive.png</texture>
 		    	<visible>ListItem.HasArchive</visible>
                 </control>
+		<!-- IPTV Provider Icons added -->   
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>50</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/anova.png</texture>
+			<visible>Integer.IsLess(ListItem.ChannelNumberLabel,200)</visible>
+                </control>
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>50</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/jiffy.png</texture>
+			<visible>Integer.IsGreater(ListItem.ChannelNumberLabel,199)</visible>
+                </control>   
             </channellayout>
             <focusedchannellayout height="item_list_height" width="340">
                 <control type="group">
@@ -537,6 +556,25 @@
 			<texture>indicator/hasarchive.png</texture>
 		    	<visible>ListItem.HasArchive</visible>
                 </control>
+		<!-- IPTV Provider Icons added -->   
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>50</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/anova.png</texture>
+			<visible>Integer.IsLess(ListItem.ChannelNumberLabel,200)</visible>
+                </control>
+		<control type="image">
+			<aspectratio align="right">keep</aspectratio>
+			<left>310</left>
+			<top>50</top>
+			<width>24</width>
+			<height>24</height>
+			<texture>indicator/jiffy.png</texture>
+			<visible>Integer.IsGreater(ListItem.ChannelNumberLabel,199)</visible>
+                </control>   
             </focusedchannellayout>
             <itemlayout height="item_list_height" width="521">
                 <include content="View_50_EPG_Itemlayout">
