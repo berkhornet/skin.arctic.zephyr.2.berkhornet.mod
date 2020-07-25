@@ -1248,6 +1248,7 @@
         <param name="pad" default="0" />
         <definition>
             <control type="image">
+                <visible>!Window.IsVisible(10701) + !Window.IsVisible(10704)</visible>
                 <left>$PARAM[pad]</left>
                 <right>$PARAM[pad]</right>
                 <top>$PARAM[pad]</top>
