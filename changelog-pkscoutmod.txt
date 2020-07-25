@@ -1,3 +1,24 @@
+0.7.003
+- Improve TV Timers and Search Artwork
+
+0.7.002
+- Improve TV Recordings Artwork
+            
+0.7.001
+- Tweak EPG layout
+            
+0.7.000
+- custom PVR EPG            
+            
+0.6.101
+- removed duplicate catchup icon
+
+0.6.100
+- community merge to add new PVR notifications for reminders and catchup
+- fix for PVR guide crashing Kodi
+- fixes to MyVideoNav for Matrix
+- fixes so the skin will run scripts and built in commands
+
 0.5.2~beta4
 - change in method for variable slide of list
 - ensured consistent XML formatting using spaces instead of tabs
