@@ -172,7 +172,7 @@
 		    <height>160</height>
 		    <aspectratio>keep</aspectratio>
 		    <!-- For NextPVR artwork use $INFO[ListItem.ActualIcon] or $INFO[ListItem.EPGEventIcon]; can also use .Fanart etc. -->
-		    <texture fallback="special://xbmc/media/splash.jpg">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
+		    <texture fallback="special://xbmc/media/banner.png">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
 		    <visible>!Player.HasMedia</visible>
 	    </control>
     </include>
